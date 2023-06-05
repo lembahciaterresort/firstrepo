@@ -10,65 +10,65 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet">
+      <style>
+            .navbar {
+                  background-color: transparent;
+                  transition: background-color 0.3s ease-in-out;
+                  animation-name: fadeIn;
+                  animation-duration: 0.3s;
+            }
+
+            .navbar.scrolled {
+                  background-color: rgb(41, 185, 157);
+                  color: white;
+                  border-bottom-width: 1px;
+                  border-color: seagreen;
+                  box-shadow: 0 20px 25px -5px rgb(55 65 81 / 0.7), 0 8px 10px -6px rgb(55 65 81 / 0.7);
+            }
+
+            .navbar.scrolled .menu ul li :hover {
+                  color: black;
+            }
+      </style>
+
       <title>LEMBAH CIATER RESORT</title>
 </head>
 
 <body class="h-[2000px] relative" style="font-family: 'Poppins', sans-serif;">
       <!-- navbar -->
-      <div class="w-full font-poppins h-[60px] flex items-center px-9 flex justify-between">
-            <span class="font-bold">LEMBAH CIATER RESORT</span>
-            <div>
-                  <ul class="flex space-x-3">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Room Type</a></li>
-                        <li><a href="">Contact</a></li>
+      <div id="navbar"
+            class="navbar w-full font-poppins h-[70px] fixed flex bg-transparent items-center px-16 text-black flex justify-between z-10">
+            <a href=""><span class="font-semibold text-xl">LEMBAH CIATER RESORT</span></a>
+            <div class="menu">
+                  <ul class="flex space-x-9 text-lg">
+                        <li class="hover:text-green-400"><a href="">Home</a></li>
+                        <li class="hover:text-green-400"><a href="">About</a></li>
+                        <li class="hover:text-green-400"><a href="">Room Type</a></li>
+                        <li class="hover:text-green-400"><a href="">Contact</a></li>
                   </ul>
             </div>
       </div>
-      <div class="px-9">
-            <div class="h-72 w-full bg-red-200 rounded-2xl">
 
-
-            </div>
+      <div class="w-full h-[754px] bg-cover bg-top" style="background-image: url(6.jpg);">
       </div>
 
 
-      <div class="px-24 z-10 absolute top-64 w-full">
-            <div class="w-full h-40 rounded-2xl bg-white border-2 border-gray-300 shadow-lg">
-            </div>
-      </div>
-      <div class="mt-32 flex justify-center font-bold">
-            Enjoy your Life
-      </div>
 
-      <div class="mt-10 flex justify-evenly items-center space-y-5 sm:space-y-0 flex-col sm:flex-row">
-            <div class="w-56 h-40 bg-red-100 rounded-2xl shadow-2xl">
-                  <div class="bg-gray-500 h-28 rounded-t-2xl flex items-start p-3 text-white">Suite 2 Bedroom</div>
-                  <div class="px-4 justify-end flex items-center bg-slate-200 h-12 rounded-b-2xl">
-                        <button
-                              class="p-2 text-xs font-semibold hover:bg-red-500 duration-300 text-white bg-blue-500 rounded-xl">Book</button>
-                  </div>
-            </div>
-            <div class="w-56 h-40 bg-red-100 rounded-2xl shadow-2xl">
-                  <div class="bg-gray-500 h-28 rounded-t-2xl flex items-start p-3 text-white">Suite 3 Bedroom</div>
-                  <div class="px-4 justify-end flex items-center bg-slate-200 h-12 rounded-b-2xl">
-                        <button
-                              class="p-2 text-xs font-semibold hover:bg-red-500 duration-300 text-white bg-blue-500 rounded-xl">Book</button>
-                  </div>
-            </div>
-            <div class="w-56 h-40 bg-red-100 rounded-2xl shadow-2xl">
-                  <div class="bg-gray-500 h-28 rounded-t-2xl flex items-start p-3 text-white">Deluxe 2 Bedroom</div>
-                  <div class="px-4 justify-end flex items-center bg-slate-200 h-12 rounded-b-2xl">
-                        <button
-                              class="p-2 text-xs font-semibold hover:bg-red-500 duration-300 text-white bg-blue-500 rounded-xl">Book</button>
-                  </div>
-            </div>
-
-      </div>
 
 
       <div class="w-full h-52 bg-black absolute bottom-0 "></div>
+
+
+      <script>
+            window.addEventListener("scroll", function () {
+                  var navbar = document.getElementById("navbar");
+                  if (window.pageYOffset > 0) {
+                        navbar.classList.add("scrolled");
+                  } else {
+                        navbar.classList.remove("scrolled");
+                  }
+            });
+      </script>
 </body>
 
 </html>

@@ -12,25 +12,11 @@
             rel="stylesheet">
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-
       <style>
-            .navbar {
-                  background-color: transparent;
-                  transition: background-color 0.3s ease-in-out;
-                  animation-name: fadeIn;
-                  animation-duration: 0.3s;
-            }
-
-            .navbar.scrolled {
-                  background-color: rgb(41, 185, 157);
-                  color: white;
-                  border-bottom-width: 1px;
-                  border-color: seagreen;
-                  box-shadow: 0 20px 25px -5px rgb(55 65 81 / 0.7), 0 8px 10px -6px rgb(55 65 81 / 0.7);
-            }
-
-            .navbar.scrolled .menu ul li :hover {
-                  color: black;
+            @media (max-width: 640px) {
+                  .full-width {
+                        width: 100%;
+                  }
             }
       </style>
 
@@ -38,35 +24,19 @@
 </head>
 
 <body class="h-[20000px] w-[375px] relative mx-auto" style="font-family: 'Poppins', sans-serif;">
-      <!-- navbar -->
-      <!-- <div id="navbar"
-            class="navbar w-full font-poppins h-[70px] fixed flex bg-transparent items-center px-2 md:px-9 lg:px-16 text-white  flex justify-between z-10"> -->
 
-      <!-- navhome -->
-      <!-- <a href=""><span class="font-semibold text-xl px-4 sm:px-10 py-2 bg-[#29B99D]">LEMBAH CIATER
-                        RESORT</span></a> -->
-
-      <!-- navlink -->
-      <!-- <div class="menu md:static md:z-0 md:top-auto absolute z-10 top-[-100px] ">
-                  <ul class="flex space-x-5 lg:space-x-9 text-lg">
-                        <li class="hover:text-green-400"><a href="">Home</a></li>
-                        <li class="hover:text-green-400"><a href="">About</a></li>
-                        <li class="hover:text-green-400"><a href="">Room Type</a></li>
-                        <li class="hover:text-green-400"><a href="">Contact</a></li>
-                  </ul>
-            </div>
-      </div> -->
+      <div class="bg-gray-200 min-h-screen flex justify-center items-center">
+            <h1 class="text-3xl font-bold text-center full-width">Selamat datang di Lembah Ciater Resort</h1>
+      </div>
 
       <!-- hero -->
       <div class="w-full h-[754px] bg-cover bg-top" style="background-image: url(6.jpg);">
       </div>
 
+      <!--nav -->
+      <button class="mx-auto w-[375px] fixed bottom-0 h-14 z-10 bg-teal-700 text-white font-bold">BOOK NOW</button>
 
 
-      <!-- 
-      <div data-aos="fade-up" data-aos-anchor-placement="center-center" class="w-[390px] h-[1080px] mx-2 bg-center bg-cover"
-            style="background-image: url('SOP BUNTUT LODEH.jpg');">
-      </div> -->
 
       <img class="px-2 py-2" data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" src="SOP BUNTUT LODEH.jpg"
             alt="">

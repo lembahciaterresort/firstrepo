@@ -1,5 +1,5 @@
 var typed = new Typed(".typing", {
-      strings: ["Serenity in Nature Meet Culture"],
+      strings: ["Masjid", "Kolam Renang", "Lapangan Tenis", "Ruang Meeting", "Restoran"],
       typeSpeed: 50,
       backSpeed: 60,
       loop: true

@@ -1,8 +1,0 @@
-@startuml
-entity Pembeli{
-email : text <PK>
---
-nama : text
-}
-
-@enduml
